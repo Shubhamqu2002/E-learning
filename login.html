@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="shortcut icon" type="png" href="images/icon/favicon.png">
+	<title>Login SignUp</title>
+	<link rel="stylesheet" type="text/css" href="loginStyle.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+  <!-- It will redirect to the Home Page after submitting the form -->
+  <script>
+  $(document).ready(function(){
+    $("form").submit(function(){
+      alert("Great Job !");
+    });
+  });
+  </script>
+</head>
+<body>
+	<video autoplay loop muted plays-inline class="back-video">
+		<source src="images/extra/185096 (Original).mp4" type="video/mp4">
+	</video>
+
+		<div class="container">
+			<div class="box form-box">
+				
+				<header>Login</header>
+				<form action="" method="post">
+					<div class="field input">
+						<label for="email">Email</label>
+						<input type="text" name="email" id="email" autocomplete="off" required>
+					</div>
+	
+					<div class="field input">
+						<label for="password">Password</label>
+						<input type="password" name="password" id="password" autocomplete="off" required>
+					</div>
+	
+					<div class="field">
+						
+						<input type="submit" class="btn" name="submit" value="Login" required>
+					</div>
+					<div class="links">
+						Don't have account? <a href="register.html">Sign Up Now</a>
+					</div>
+				</form>
+			</div>
+		  </div>
+		<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
